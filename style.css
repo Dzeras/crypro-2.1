@@ -1,0 +1,380 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.container {
+    max-width: 1610px;
+    margin: 0 auto;
+    padding: 0 10px;
+}
+
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #1E1F25;
+}
+
+.header_inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 120px;
+}
+
+.header_left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.header_logo {}
+
+.header_border {
+    width: 1px;
+    height: 46px;
+    background: #ADB3BF;
+}
+
+.header_navigate ul {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.header_navigate ul a {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 44px;
+    padding: 0 18px;
+    color: #ADB3BF;
+    font-size: 18px;
+}
+
+.header_profile {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.header_profile_item {
+    min-height: 56px;
+    padding: 0 37px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    border-radius: 4px;
+    font-size: 18px;
+}
+
+.header_profile_item_accent {
+    background: #1B70F1;
+}
+
+/* WELCOME */
+
+#welcome {
+    padding-top: 280px;
+    min-height: 100vh;
+    padding-bottom: 30px;
+    background: #131517 url('./images/welcome_bg.png');
+    background-size: cover;
+    background-position: center;
+    overflow: hidden;
+}
+
+.welcome_subtitle {
+    font-size: 24px;
+    font-weight: 600;
+    color: #1B70F1;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.welcome_subtitle_line {
+    width: 40px;
+    height: 2px;
+    background: #1B70F1;
+    border-radius: 12px;
+}
+
+#welcome h1 {
+    font-size: 96px;
+    color: #F7FAFF;
+}
+
+.welcome_dotted {
+    margin: 10px 0 20px 216px;
+}
+
+.welcome_content {
+    color: #F2F7FF;
+    font-size: 20px;
+    max-width: 800px;
+    margin-bottom: 80px;
+}
+
+.welcome_links {
+    display: flex;
+    gap: 30px;
+}
+
+.welcome_link {
+    height: 56px;
+    min-width: 200px;
+    max-width: max-content;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 11px;
+    border: 1px solid white;
+    color: white;
+    border-radius: 4px;
+}
+
+.welcome_link.accent {
+    background: #1B70F1;
+    border: none;
+}
+
+.welcome_inner {
+    position: relative;
+    margin-bottom: 165px;
+}
+
+.welcome_inner_info{
+    position: relative;
+    z-index: 3;
+}
+
+.welcome_inner_image {
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.welcome_svet{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+@keyframes pulse {
+    0%, 100% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.03);
+    }
+}
+
+.welcome_laptop {
+    animation-name: pulse;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+.welcome_market {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.market_market_item {
+    padding: 10px 20px;
+
+}
+
+.wecome_market_item_up {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.welcome_market_item_currency {
+    font-size: 16px;
+    line-height: 24px;
+    color: #ADB3BF;
+}
+
+.wecome_market_item_percent {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: #06B470;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 20px;
+}
+
+.welcome_market_item_down {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 32px;
+    color: #fff;
+}
+
+.welcome_market_line {
+    width: 1px;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 2px;
+}
+
+/* WELCOME */
+
+/* Market Trends */
+
+#market_trends {
+    background: #131517;
+    padding-top: 120px;
+    height: 100%;
+    padding-bottom: 120px;
+}
+
+.market_trends_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.market_trends_top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 60px;
+}
+
+.market_trends_top_title {
+    font-weight: 700;
+    font-size: 58px;
+    line-height: 100%;
+    color: #fff;
+}
+
+.market_trends_top_menu ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    padding: 14.5px 0;
+}
+
+.market_trends_top_menu ul li {
+    font-size: 20px;
+    line-height: 32px;
+    color: #ADB3BF;
+}
+
+.market_trends_line {
+    width: 1590px;
+    height: 1px;
+    background: #fff;
+}
+
+.market_trends_cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 30px;
+    margin-top: 60px;
+    margin-bottom: 60px;
+}
+
+.market_trends_card {
+    padding: 40px 30px;
+    border: 2px solid #1E1F25;
+    border-radius: 10px;
+}
+
+.market_trends_card_top {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.market_trends_card_top_img {
+    margin-bottom: 20px;
+}
+
+.market_trends_card_top_currency {
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+}
+
+.market_trends_card_top_percent {
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 24px;
+    color: #06B470;
+    gap: 6px;
+}
+
+.market_trends_card_top_percent.decrease {
+    color: #F74E2C;
+}
+
+.market_trends_card_middle {
+    color: #fff;
+    text-align: center;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 36px;
+    margin-top: 20px;
+}
+
+.market_trends_card_bottom {
+    margin-top: 20px;
+}
+
+
+.market_trends_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 26px;
+    gap: 8px;
+
+    background: #1B70F1;
+    border-radius: 4px;
+}
+
+.market_trends_btn a {
+    font-size: 20px;
+    line-height: 32px;
+    color: #fff;
+}
+
+/* Market Trends */
