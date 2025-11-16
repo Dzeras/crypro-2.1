@@ -4,7 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="libs/aos.css" rel="stylesheet">
+    <link href="libs/swiper-bundle.min.css" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <title>CryptoBrains | Платформа для покупки и продажи криптовалюты</title>
 </head>
@@ -50,11 +51,12 @@
                     <a class="header_profile_item" href="">Login</a>
                     <a class="header_profile_item header_profile_item_accent" href="">Sign Up</a>
                 </div>
+                <button class="burger_menu"><img src="icons/burger.svg" alt="Мобильное меню"></button>
             </div>
         </div>
     </header>
 
-    <section id="welcome">
+    <!-- <section id="welcome">
         <div class="container">
             <div class="welcome_inner">
                 <div class="welcome_inner_info">
@@ -163,27 +165,25 @@
                 <div class="welcome_market_line"></div>
             </div>
         </div>
-    </section>
-
+    </section> -->
+<!-- 
     <section id="market_trends">
         <div class="container">
             <div class="market_trends_inner">
-                <div class="market_trends_top">
-                    <h2 class="market_trends_top_title">Market Trends</h2>
-                    <div class="market_trends_top_menu">
-                        <ul>
-                            <li><a href="#">All</a></li>
-                            <li><a href="#">Top Gainers</a></li>
-                            <li><a href="#">Top Losers</a></li>
-                            <li><a href="#">New Listing</a></li>
-                            <li><a href="#">Defi</a></li>
-                            <li><a href="#">Metaverse</a></li>
-                        </ul>
+                <div class="market_trends_header">
+                    <h2 class="market_trends_header_title">Market Trends</h2>
+                    <div class="market_trends_header_filters">
+                        <button class="market_trends_header_filter">All</button>
+                        <button class="market_trends_header_filter">Top Gainers</button>
+                        <button class="market_trends_header_filter">Top Losers</button>
+                        <button class="market_trends_header_filter">New Listing</button>
+                        <button class="market_trends_header_filter">Defi</button>
+                        <button class="market_trends_header_filter">Metaverse</button>
                     </div>
                 </div>
                 <div class="market_trends_line"></div>
                 <div class="market_trends_cards">
-                    <div class="    d">
+                    <div class="market_trends_card">
                         <div class="market_trends_card_top">
                             <img class="market_trends_card_top_img" src="images/Crypto Icons.png" alt="Crypto icons">
                             <div class="market_trends_card_top_currency">Bitcoin / BTC</div>
@@ -262,11 +262,181 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <!-- <section id="reviews">
+        <div class="container">
+            <div class="reviews_inner">
+            <div class="reviews_header">
+                <h2 class="reviews_title">What Traders Saying About Us!</h2>
+                <p class="reviews_subtitle">
+                Lorem Ipsum has been the industry's standard dummy text since the
+                1500s, when an unknown printer took a galley of type and scrambled
+                type specimen book.
+                </p>
+            </div>
+
+            <div class="reviews_items">
+                <div class="swiper-wrapper">
+                <div class="reviews_item swiper-slide">
+                    <div class="reviews_item_info">
+                    <div class="reviews_item_author">
+                        <img
+                        class="reviews_item_author_image"
+                        src="images/review-man.png"
+                        alt=""
+                        />
+                        <div class="reviews_item_author_info">
+                        <div class="reviews_item_author_name">John Doe</div>
+                        <div class="reviews_item_author_location">
+                            Vladikavkaz, Russia
+                        </div>
+                        </div>
+                    </div>
+                    <img src="images/review-kav.png" alt="" />
+                    </div>
+                    <p class="reviews_item_text">
+                    “ Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. ”
+                    </p>
+                </div>
+                <div class="reviews_item swiper-slide">
+                    <div class="reviews_item_info">
+                    <div class="reviews_item_author">
+                        <img
+                        class="reviews_item_author_image"
+                        src="images/review-man.png"
+                        alt=""
+                        />
+                        <div class="reviews_item_author_info">
+                        <div class="reviews_item_author_name">John Doe</div>
+                        <div class="reviews_item_author_location">
+                            Vladikavkaz, Russia
+                        </div>
+                        </div>
+                    </div>
+                    <img src="images/review-kav.png" alt="" />
+                    </div>
+                    <p class="reviews_item_text">
+                    “ Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. ”
+                    </p>
+                </div>
+                <div class="reviews_item swiper-slide">
+                    <div class="reviews_item_info">
+                    <div class="reviews_item_author">
+                        <img
+                        class="reviews_item_author_image"
+                        src="images/review-man.png"
+                        alt=""
+                        />
+                        <div class="reviews_item_author_info">
+                        <div class="reviews_item_author_name">John Doe</div>
+                        <div class="reviews_item_author_location">
+                            Vladikavkaz, Russia
+                        </div>
+                        </div>
+                    </div>
+                    <img src="images/review-kav.png" alt="" />
+                    </div>
+                    <p class="reviews_item_text">
+                    “ Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type
+                    and scrambled it to make a type specimen book. ”
+                    </p>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <footer>
+        <div class="container">
+            <div class="footer_inner">
+                <div class="footer_up">
+                    <img class="header_logo" src="images/logo.png" alt="Логотип CryptoBrains">
+                    <div class="footer_community">
+                        <div class="footer_community_title">Community-</div>
+                        <a href="#"><img src="icons/discord.png" alt="Discord"></a>
+                        <a href="#"><img src="icons/tg.png" alt="Telegram"></a>
+                        <a href="#"><img src="icons/insta.png" alt="Instagram"></a>
+                        <a href="#"><img src="icons/in.png" alt="In"></a>
+                        <a href="#"><img src="icons/youtube.png" alt="YouTube"></a>
+                    </div>
+                </div>
+                <div class="footer_middle">
+                    <div class="footer_middle_item">
+                        <div class="footer_middle_item_title">Crypto Brains</div>
+                        <a href="#">About Us</a>
+                        <a href="#">Our Team</a>
+                        <a href="#">Road Map</a>
+                        <a href="#">Risk Disclosure</a>
+                    </div>
+                    <div class="footer_middle_item">
+                        <div class="footer_middle_item_title">Knowledge</div>
+                        <a href="#">F.A.Q.</a>
+                        <a href="#">Articals</a>
+                        <a href="#">Video Tutorial</a>
+                        <a href="#">Beginner’s Guide</a>
+                    </div>
+                    <div class="footer_middle_item">
+                        <div class="footer_middle_item_title">Services</div>
+                        <a href="#">API Service</a>
+                        <a href="#">Token Listing</a>
+                        <a href="#">API Document</a>
+                        <a href="#">Ticket Services</a>
+                    </div>
+                    <div class="footer_middle_item">
+                        <div class="footer_middle_item_title">Exchange</div>
+                        <a href="#">P2P</a>
+                        <a href="#">Referral</a>
+                        <a href="#">Markets</a>
+                        <a href="#">Affiliate Program</a>
+                    </div>
+                    <div class="footer_middle_item">
+                        <div class="footer_middle_item_title">Support Sevice</div>
+                        <a href="#">Career</a>
+                        <a href="#">Comunity</a>
+                        <a href="#">Customer Chat</a>
+                        <a href="#">Technical Support</a>
+                    </div>
+                    <div class="footer_middle_item">
+                        <div class="footer_middle_item_title">Press</div>
+                        <a href="#">Blog</a>
+                        <a href="#">News</a>
+                        <a href="#">Events</a>
+                    </div>
+                    <div class="knowledge_links">
+                    </div>
+                </div>
+                <div class="footer_bottom">
+                    <div class="footer_author_block">
+                        <div class="footer_author_text">©Copyright 2022 All Rights Are Reserved.</div>
+                        <div class="footer_author_circle"></div>
+                        <div class="footer_author_text">Privacy Policy</div>
+                        <div class="footer_author_circle"></div>
+                        <div class="footer_author_text">Terms of Use</div>
+                    </div>
+                    <div class="footer_tools">
+                        <button class="footer_tool">English <img src="icons/arrow_down.svg" alt=""></button>
+                        <button class="footer_tool">INR <img src="icons/arrow_down.svg" alt=""></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer> -->
+
+<script src="libs/aos.js"></script>
+<script src="libs/swiper-bundle.min.js"></script>
 <script>
   AOS.init();
+  new Swiper(".reviews_items", {
+    slidesPerView: 2.3,
+    spaceBetween: 30,
+    });
 </script>
 </body>
 

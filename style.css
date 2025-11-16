@@ -8,6 +8,10 @@
     font-family: "Source Sans 3", sans-serif;
 }
 
+body {
+    background: #131517;
+}
+
 a {
     color: inherit;
     text-decoration: none;
@@ -30,6 +34,7 @@ header {
     left: 0;
     width: 100%;
     background: #1E1F25;
+    z-index: 10;
 }
 
 .header_inner {
@@ -253,7 +258,6 @@ header {
 /* Market Trends */
 
 #market_trends {
-    background: #131517;
     padding-top: 120px;
     height: 100%;
     padding-bottom: 120px;
@@ -265,40 +269,48 @@ header {
     align-items: center;
 }
 
-.market_trends_top {
+.market_trends_header {
     display: flex;
     align-items: center;
     justify-content: space-between;
     width: 100%;
     margin-bottom: 60px;
+    padding-bottom: 60px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
 }
 
-.market_trends_top_title {
+.market_trends_header_title {
     font-weight: 700;
     font-size: 58px;
     line-height: 100%;
     color: #fff;
 }
 
-.market_trends_top_menu ul{
+.market_trends_header_filters {
     display: flex;
     align-items: center;
-    justify-content: space-between;
     gap: 30px;
-    padding: 14.5px 0;
 }
 
-.market_trends_top_menu ul li {
+.market_trends_header_filter {
     font-size: 20px;
     line-height: 32px;
     color: #ADB3BF;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.5s ease;
 }
 
-.market_trends_line {
+.market_trends_header_filter:hover {
+    text-decoration: underline;
+
+}
+
+/* .market_trends_line {
     width: 1590px;
     height: 1px;
     background: #fff;
-}
+} */
 
 .market_trends_cards {
     display: flex;
@@ -378,3 +390,186 @@ header {
 }
 
 /* Market Trends */
+
+/* REVIEWS */
+
+#reviews {
+    background: #1E1F25 url('./images/welcome_bg.png');
+    padding: 120px 0;
+}
+
+.reviews_header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 50px;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.reviews_title {
+    font-size: 58px;
+    color: white;
+    font-weight: bold;
+}
+
+.reviews_subtitle {
+    font-size: 18px;
+    color: #ADB3BF;
+}
+
+.reviews_items {
+    overflow-x: hidden;
+}
+
+.reviews_item {
+    background: #272A34;
+    padding: 40px 30px;
+    border-radius: 10px;
+}
+
+.reviews_item_info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.reviews_item_author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.reviews_item_author_info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.reviews_item_author_name {
+    font-size: 20px;
+    color: white;
+}
+
+.reviews_item_author_location {
+    font-size: 14px;
+    color: white;
+    opacity: 0.5;
+}
+
+.reviews_item_text {
+    color: white;
+    font-size: 24px;
+}
+
+/* REVIEWS */
+
+/* Footer */
+
+footer {
+    background: #1E1F25 url('./images/welcome_bg.png');
+    padding: 120px 0 40px;
+}
+
+.footer_inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_up {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);;
+}
+
+.footer_community {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.footer_community_title {
+    color: #fdfdfd;
+    font-size: 20px;
+}
+
+.footer_middle {
+    display: flex;
+    align-items: start;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding-bottom: 60px;
+    margin-bottom: 60px;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);;
+}
+
+.footer_middle_item {
+    min-width: 240px;
+    max-width: 240px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.footer_middle_item_title {
+    font-weight: 400;
+    font-size: 18px;
+    color: #fdfdfd;
+    margin-bottom: 20px;
+}
+
+.footer_middle_item > a {
+    font-size: 16px;
+    color: #ADB3BF;
+    padding: 3px 0;
+    margin-bottom: 10px;
+}
+
+.footer_bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+.footer_author_block {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.footer_author_text {
+    font-size: 16px;
+    color: #FDFDFD;
+}
+.footer_author_circle {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.4);
+}
+.footer_tools {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+.footer_tool {
+    width: 105px;
+    height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    background: transparent;
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 4px;
+    color: #FDFDFD;
+    font-size: 16px;
+}
+
+/* Footer */
